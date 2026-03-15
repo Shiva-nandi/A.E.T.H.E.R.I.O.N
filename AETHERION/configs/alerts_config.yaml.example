@@ -1,0 +1,26 @@
+# DBDRS v2 — Alerts Config (copy to alerts_config.yaml, fill in credentials)
+twilio:
+  account_sid: YOUR_SID
+  auth_token: YOUR_TOKEN
+  from_number: '+1XXXXXXXXXX'
+
+firebase:
+  enabled: false
+  server_key: YOUR_FCM_KEY
+  service_account_json: configs/firebase_service_account.json
+
+email:
+  enabled: false
+  smtp_host: smtp.gmail.com
+  smtp_port: 587
+  sender: your@gmail.com
+  password: YOUR_APP_PASSWORD
+  recipients:
+    - coastguard@example.com
+
+# Hyderabad override numbers (fallback if live lookup fails)
+hyderabad_fallback:
+  police: '+914023232323'
+  hospital: '+914044885000'
+  coast_guard: '+914027777777'
+  lifeguard: '+919876543210'

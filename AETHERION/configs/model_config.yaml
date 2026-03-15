@@ -1,0 +1,12 @@
+# AETHERION — Model Training Configuration
+model: yolov8s.pt
+run_name: aetherion
+project_dir: runs
+dataset_yaml: configs/dataset.yaml
+epochs: 100
+imgsz: 640
+batch: 16
+patience: 20
+device: 0
+workers: 4
+save_period: 10

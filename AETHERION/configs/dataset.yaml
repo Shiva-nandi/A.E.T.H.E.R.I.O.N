@@ -1,0 +1,18 @@
+# AETHERION — Dataset (11 threat classes)
+path: data/processed
+train: train/images
+val: valid/images
+test: test/images
+nc: 11
+names:
+  0: normal_swim
+  1: panic_drowning
+  2: unconscious
+  3: submerged
+  4: shark_attack
+  5: rip_current
+  6: jellyfish_swarm
+  7: heatstroke
+  8: fight_assault
+  9: net_entrapment
+  10: monsoon_surge
